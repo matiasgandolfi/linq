@@ -1,0 +1,127 @@
+Programacion declarativa vs imperativa
+
+
+
+
+/*------------------------	Comparacion--------------------*/
+
+
+	//Programacion declarativa
+
+-Paradigma de la programacion
+
+
+-Instrucciones donde especifico lo que quiero
+y no como lo quiero
+
+
+-Contrapocision a la programacion imperativa
+
+-Fiable y simple
+
+
+
+
+
+	//Programacion imperativa
+
+-Paradigma de la programacion
+
+-Secuencia de paso a paso de instrucciones
+
+-Contraposicion a la programacion declarativa
+
+
+-Codigo mas extenso pero facil de interpretar
+
+
+
+
+
+
+
+
+
+/*------- Ejemplo 1 --------------------*/
+
+
+var listoOfNumber = new int[] {1,2,3,4};
+
+var item1 = listoOfNumber.FirstOrDefault(p=> p=1);
+
+
+
+
+
+/*----------------Where Condicion----------------/
+
+
+
+Where()		//Condicion
+
+
+StartWith()	//Empieza con...
+
+
+Ej
+
+frutas.Where(p=>p.StartWith("Mango")).ToList();
+
+
+.ForEach(p=> Console.WriteLine(p));		//Recorrer todo la list
+
+
+
+
+
+/*--------------------All & Any --------------------------------*/
+
+
+
+All = Todos los elementos			//Devuelve un True o False
+
+Any = Alguno de los elementos			//Devuelve un True o False
+
+
+
+
+/*--------------Contains------------------------------------*/
+
+
+Existe o no un elemento en la  coleccion
+
+
+
+	Collection.Where(p => p.Categories.Contains("Java")).OrderBy(p=>p.Title).ToList();
+
+	Collection.Where(p => p.Categories.Contains("Java")).OrderByDescending(p => p.Title).ToList();
+
+
+
+
+
+/*--------------------Operadores Take y Skip-----*/
+
+
+
+Sirven para seleccionar una cantidad de elementos
+
+
+Take = Sirve para seleccionar los primeros
+TakeLast = Sirve para seleccionar los ultimos
+TakeWhile = Todos los elementos que cumplan una condicion
+
+
+
+
+Skip = Omite los primeros x elemenots
+SkipLast = Omite los ultimos x elemenots
+SkipWhile = Omite los elemenots que cumplan esa condicion
+
+
+
+/*---------------Selected------------------------*/
+
+librosCollection.Take(3)
+.Select(p=> new Book() {Title = p.Title,
+PCount = p.PageCount});

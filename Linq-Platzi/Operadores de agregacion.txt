@@ -1,0 +1,38 @@
+Operadores de agregacion
+
+
+//LongCount y Count
+
+Cuenta la cantidad de elementos que hay en
+la listo
+
+
+
+
+
+//Operadores
+
+Min = Para datos simples
+
+Max = Para datos simples
+
+
+//Operador min y max para datos complejos
+
+Minby = Trae el registro que cumpla la condicion
+
+Maxby = Trae el registro que cumpla la condicion
+
+
+
+
+//Sum y Aggregate
+
+Sum = Suma los valores
+
+Aggregate = concatena
+
+
+
+
+Average = Obtener el promedio

@@ -1,0 +1,14 @@
+Operadores de Agrupamiento
+
+
+GroupBy agrupa especificando desde que elemento
+agrupamos
+
+
+
+
+Lookup = agrupacion devolviendo un diccionario
+
+
+Join = Relaciona dos tablas con un campo compartido
+y devuelve el valor de el definido aqui (p,x)=>p
